@@ -45,8 +45,8 @@ class histogram_Equalization:
         r = pix[0]
         g = pix[1]
         b = pix[2]
-        # x = (r+b+g)/3
-        x = r
+        x = (r+b+g)/3
+        # x = r
         gLevel[round(x)] = gLevel[round(x)] + 1
     self.plotly(gLevel,1)
     nk = self.w*self.h
