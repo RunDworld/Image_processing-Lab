@@ -4,7 +4,7 @@ def main():
     img = Image.open("img.jpg")
     pixel = img.getpixel((50,50))
     print(pixel)
-    # --------------------------------------------------------
+    
     w,h = img.size
     new_img = Image.new("RGB",(w,h),"white")
 
@@ -17,7 +17,7 @@ def main():
             else:
                 pixels[i,j] = img.getpixel((i,j))
     print(new_img)
-    # new_img.save("C:/Users/Vinit/Desktop/ip",'png')
+    
     new_img.show()
     
 
